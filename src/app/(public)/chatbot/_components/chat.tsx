@@ -33,7 +33,7 @@ export function Chat({ id, initialMessages, selectedModelId }: { id: string; ini
     const visibleMessages = messages;
 
     return (
-        <div className="relative h-screen w-full overflow-hidden">
+        <div className="font-mulish relative h-screen w-full overflow-hidden">
             <div className="absolute inset-0 bg-contain bg-center bg-no-repeat">
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative mx-auto flex h-full w-full flex-col">
@@ -94,18 +94,18 @@ So, ready to take a deep breath and start your journey? Let’s create something
                                     setMessages={setMessages}
                                     append={append}
                                 />
-                                <button type="submit" className="rounded-2xl border bg-[#A165D7] px-4 py-[10px]">
+                                <button type="submit" className="rounded-2xl border bg-white px-4 pb-[8px] pt-[14px]">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="24"
                                         height="24"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        stroke="#FFFFFF"
+                                        stroke="#000000"
                                         strokeWidth="2"
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
-                                        className="lucide lucide-send"
+                                        className="lucide lucide-send -rotate-45"
                                     >
                                         <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
                                         <path d="m21.854 2.147-10.94 10.939" />

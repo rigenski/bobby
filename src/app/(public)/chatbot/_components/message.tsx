@@ -40,13 +40,13 @@ export const Message = ({
                     </div>
                 )}
                 <div
-                    className={cn(`flex max-w-[80%] flex-col gap-2 rounded-bl-2xl rounded-tl-2xl rounded-tr-2xl bg-[#F8F8F8] px-4 py-2`, {
+                    className={cn(`flex max-w-[80%] flex-col gap-2 rounded-bl-2xl rounded-tl-2xl rounded-tr-2xl px-4 py-2`, {
                         '': role === 'assistant',
-                        'bg-[#F8F8F8]': role === 'user',
+                        'bg-[#2B2B2B]': role === 'user',
                     })}
                 >
                     {content && (
-                        <div className="flex flex-col gap-4 text-lg font-normal text-black">
+                        <div className="flex flex-col gap-4 text-lg font-normal text-white">
                             <Markdown>{content as string}</Markdown>
                         </div>
                     )}

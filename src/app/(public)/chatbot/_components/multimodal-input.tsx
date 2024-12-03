@@ -63,7 +63,7 @@ export function MultimodalInput({
                 value={input}
                 onChange={handleInput}
                 placeholder={placeholder}
-                className={cn('relative z-20 min-h-[57px] resize-none overflow-hidden rounded-2xl rounded-xl bg-white font-sans text-lg', className)}
+                className={cn('font-mulish relative z-20 min-h-[57px] resize-none overflow-hidden rounded-2xl bg-white text-lg', className)}
                 onKeyDown={(event: React.KeyboardEvent<HTMLTextAreaElement>) => {
                     if (event.key === 'Enter' && !event.shiftKey) {
                         event.preventDefault();

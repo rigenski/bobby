@@ -129,7 +129,7 @@ export default async function Layout({ children }: TLayoutProps) {
                 `}
                     </style>
                 </head>
-                <body className={cn([comicNeue.variable, mulish.variable, 'text-black antialiased'])}>
+                <body className={cn([comicNeue.variable, mulish.variable, 'font-comicNeue text-black antialiased'])}>
                     {!config?.maintenance?.isMaintenance ? (
                         <>
                             <Analytics config={config} />
