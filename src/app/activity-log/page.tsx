@@ -24,7 +24,7 @@ const mulish = Mulish({
 export default function Page() {
   return (
     <>
-      <div className={`bg-[url('/_assets/Vector.png')]`}>
+      <div className={`bg-[url('/assets/activity-log/bg.png')]`}>
         <div className="flex flex-col items-center pt-[66px]">
           <div className="w-[700px] pl-[70px] mb-[70px]">
             <Link href="/" className="flex items-center gap-[10px]">
