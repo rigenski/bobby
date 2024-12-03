@@ -21,14 +21,7 @@ export default function Section4() {
                                     <br /> Boby be your guide to
                                     <br /> a simpler,
                                 </h2>
-                                <p
-                                    className="text-lg font-normal text-[#000000]"
-                                    data-aos="fade-up"
-                                    data-aos-delay="100"
-                                    style={{
-                                        WebkitTextStroke: '0.5px #000000',
-                                    }}
-                                >
+                                <p className="text-lg font-normal text-[#000000]" data-aos="fade-up" data-aos-delay="100">
                                     With every conversation, you’ll feel less overwhelmed and more in control.
                                 </p>
                                 <div className="flex items-center gap-4">

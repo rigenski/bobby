@@ -1,3 +1,4 @@
+import Footer from './_components/footer';
 import Header from './_components/header';
 import RunningText from './_components/running-text';
 import RunningText2 from './_components/running-text2';
@@ -18,6 +19,7 @@ export default async function Page() {
             <Section3 />
             <RunningText2 />
             <Section4 />
+            <Footer />
         </>
     );
 }
