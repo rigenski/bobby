@@ -37,7 +37,7 @@ export default function ChatbotContainer() {
                         <div className="absolute left-0 top-0">
                             <div className="px-4 py-8">
                                 <div className="flex items-center gap-4">
-                                    <Image src="/assets/chatbot/profile.png" alt="Lino" width={480} height={480} className="size-12 rounded-full" />
+                                    <Image src="/assets/chatbot/profile.png" alt="Boby" width={480} height={480} className="size-12 rounded-full" />
                                     <h2 className="text-2xl font-bold text-white">Boby v1.0</h2>
                                 </div>
                             </div>
