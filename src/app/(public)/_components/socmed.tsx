@@ -24,7 +24,7 @@ export default function Socmed() {
                                 <Image src="/assets/homepage/header/twitter.png" alt="" width={480} height={480} className="size-5" />
                             </Link>
                             <Link href={'https://x.com/Quoinquix'} className="absolute -bottom-2 -right-2">
-                                <Image src="/assets/homepage/header/twitter-1.png" alt="" width={480} height={480} className="size-5" />
+                                <Image src="/assets/homepage/header/twitter-1.png" alt="" width={480} height={480} className="size-5 rounded-full border-2 border-black" />
                             </Link>
                         </div>
                         <div className="relative">
