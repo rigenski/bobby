@@ -1,10 +1,11 @@
-import Footer from './_components/footer/index';
+
 import { Comic_Neue, Mulish } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import Arrow from '@/images/icon/arrow.svg';
 import activityData from "./_components/activity-data.json"
 import ActivityTile from './_components/activity-tile';
+import Footer from '../(public)/_components/footer';
 
 const comicNeue = Comic_Neue({
   weight: '400',
@@ -43,11 +44,11 @@ export default function Page() {
             </h2>
           </div>
           <div className="pt-[30px] pb-[184px] flex flex-col gap-[24px]">
-          {activityData.map(data => <ActivityTile title={data.title} desc={data.description} link={data.link} />)}
+            {activityData.map(data => <ActivityTile title={data.title} desc={data.description} link={data.link} />)}
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

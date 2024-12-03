@@ -8,6 +8,7 @@ import XBig from './_assets/wizard-x-big.svg';
 import Xwiz from './_assets/xwizard.svg';
 import Xzom from './_assets/xzombie.svg';
 import Link from 'next/link';
+import Footer from '../(public)/_components/footer';
 
 export default function Page() {
     return (
@@ -354,6 +355,7 @@ export default function Page() {
                     </div>
                 </div>  */}
             </div>
+            <Footer />
         </>
     );
 }
