@@ -77,7 +77,27 @@
 
     body {
         @apply bg-background text-foreground;
+        overflow-x: hidden;
     }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E0DCC1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2D384D;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2D384D;
 }
 
 .comic-neue-light {
