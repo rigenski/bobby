@@ -104,6 +104,9 @@ importers:
       usehooks-ts:
         specifier: ^3.1.0
         version: 3.1.0(react@18.3.1)
+      web-client-boilerplate:
+        specifier: 'file:'
+        version: file:(@opentelemetry/api@1.9.0)(@types/react-dom@18.3.0)(@types/react@18.3.8)(tailwindcss@3.4.12)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -2706,6 +2709,9 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
+  'web-client-boilerplate@file:':
+    resolution: {directory: '', type: directory}
+
   which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
 
@@ -3812,7 +3818,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 8.57.1
-      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -3835,7 +3841,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@8.57.1))(eslint@8.57.1):
+  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -5708,6 +5714,55 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
+
+  web-client-boilerplate@file:(@opentelemetry/api@1.9.0)(@types/react-dom@18.3.0)(@types/react@18.3.8)(tailwindcss@3.4.12):
+    dependencies:
+      '@ai-sdk/openai': 1.0.5(zod@3.23.8)
+      '@hookform/resolvers': 3.9.0(react-hook-form@7.53.0(react@18.3.1))
+      '@radix-ui/react-dialog': 1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-separator': 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-slot': 1.1.0(@types/react@18.3.8)(react@18.3.1)
+      '@tanstack/react-query': 5.56.2(react@18.3.1)
+      '@types/aos': 3.0.7
+      add: 2.0.6
+      ai: 4.0.10(react@18.3.1)(zod@3.23.8)
+      aos: 2.3.4
+      class-variance-authority: 0.7.0
+      clsx: 2.1.1
+      date-fns: 3.6.0
+      framer-motion: 11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      lodash: 4.17.21
+      lucide-react: 0.396.0(react@18.3.1)
+      next: 14.2.4(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-nprogress-bar: 2.3.13
+      next-runtime-env: 3.2.2(next@14.2.4(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      next-themes: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      pnpm: 9.11.0
+      query-string: 9.1.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-fast-marquee: 1.6.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-hook-form: 7.53.0(react@18.3.1)
+      react-markdown: 9.0.1(@types/react@18.3.8)(react@18.3.1)
+      remark-gfm: 4.0.0
+      sonner: 1.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tailwind-merge: 2.5.2
+      tailwindcss-animate: 1.0.7(tailwindcss@3.4.12)
+      usehooks-ts: 3.1.0(react@18.3.1)
+      zod: 3.23.8
+      zustand: 4.5.5(@types/react@18.3.8)(react@18.3.1)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@emotion/is-prop-valid'
+      - '@opentelemetry/api'
+      - '@playwright/test'
+      - '@types/react'
+      - '@types/react-dom'
+      - babel-plugin-macros
+      - immer
+      - sass
+      - supports-color
+      - tailwindcss
 
   which-boxed-primitive@1.0.2:
     dependencies:
