@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Arrow from './_assets/arraow.svg';
-import Pimo2 from './_assets/bigImg.png';
 import Copy from './_assets/copy.svg';
 import Every from './_assets/Every-greate.svg';
 import LogoFoot from './_assets/logo-foot.svg';
@@ -23,7 +22,6 @@ export default function Page() {
                     </div>
 
                     <div>
-                        {/* <Image src={Pimo} alt="" /> */}
                         <h1
                             className={`text-[56px] balsamiq-sans-bold text-white font-bold [text-shadow:2px_2px_0px_#2D384D]`}
                             style={{
@@ -320,40 +318,6 @@ export default function Page() {
                     </div>
                     <div className="pt-[30px] pb-[184px] flex flex-col gap-[24px]"></div>
                 </div>
-                {/* <div>
-                    <div className="bg-[url('/footer/images/bg-footer.png')] w-full h-[70px]"></div>
-                    <div className="bg-[url('/footer/images/bg-footer.png')] flex justify-between ">
-                        <div className="flex flex-col justify-center pl-[100px]">
-                            <Image src={LogoFoot} alt="" />
-                            <p
-                                className={`text-[20px] text-white font-bold max-w-[400px] [text-shadow:2px_2px_0px_#7A5599]`}
-                                style={{
-                                    WebkitTextStroke: '1px #2D384D',
-                                }}
-                            >
-                                Copyright © 2024 All rights reserved
-                            </p>
-                        </div>
-                        <div>
-                            <Image src={Pimo2} alt="" />
-                        </div>
-                        <div className="flex flex-col justify-center pr-[100px]">
-                            <p
-                                className={`text-[20px] text-white font-bold max-w-[400px] [text-shadow:2px_2px_0px_#7A5599]`}
-                                style={{
-                                    WebkitTextStroke: '1px #2D384D',
-                                }}
-                            >
-                                Every great wizard begins with a single spell. Join Pimo today!
-                            </p>
-                            <div className="flex gap-[10px] mt-[20px]">
-                                <Image src={Xzom} alt="" />
-                                <Image src={Xwiz} alt="" />
-                                <Image src={XBig} alt="" />{' '}
-                            </div>
-                        </div>
-                    </div>
-                </div>  */}
             </div>
             <Footer />
         </>
