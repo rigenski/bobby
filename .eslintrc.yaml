@@ -19,12 +19,12 @@ parser: '@typescript-eslint/parser'
 
 rules:
     'no-console': 'warn'
-    'no-nested-ternary': 'warn'
-    'no-use-before-define': 'warn'
-    '@typescript-eslint/array-type':
-        - 'warn'
-        - 'default': 'array-simple'
-    '@typescript-eslint/no-explicit-any': 'warn'
-    '@typescript-eslint/consistent-type-imports': 'warn'
-    '@typescript-eslint/consistent-type-definitions': 'warn'
-    '@typescript-eslint/consistent-indexed-object-style': 'warn'
+    # 'no-nested-ternary': 'warn'
+    # 'no-use-before-define': 'warn'
+    # '@typescript-eslint/array-type':
+    #     - 'warn'
+    #     - 'default': 'array-simple'
+    # '@typescript-eslint/no-explicit-any': 'warn'
+    # '@typescript-eslint/consistent-type-imports': 'warn'
+    # '@typescript-eslint/consistent-type-definitions': 'warn'
+    # '@typescript-eslint/consistent-indexed-object-style': 'warn'
