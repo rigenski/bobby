@@ -89,6 +89,12 @@ const config = {
                     from: { height: 'var(--radix-accordion-content-height)' },
                     to: { height: '0' },
                 },
+                shake: {
+                    '0%, 100%': { transform: 'translate(0)' },
+                    '25%': { transform: 'translate(-2px, 2px)' },
+                    '50%': { transform: 'translate(2px, -2px)' },
+                    '75%': { transform: 'translate(-2px, 2px)' },
+                },
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
