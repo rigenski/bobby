@@ -74,7 +74,7 @@ export default function Header() {
                             </Link>
                         </div>
                         <Link
-                            href={'#PUMP_FUN_LINK'}
+                            href={'https://pump.fun/FxTWzQSwWMXndEXzFMyxe6cDsgNrSq16X3Exmj2ypump'}
                             className="flex items-center gap-2 rounded-lg border-2 border-black bg-white px-4 py-2 font-normal text-black [box-shadow:2px_2px_0px_#000000] hover:animate-shake"
                         >
                             <Image src="/assets/homepage/header/char.png" alt="" width={480} height={480} className="size-5" />
