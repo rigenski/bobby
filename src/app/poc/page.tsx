@@ -46,7 +46,7 @@ export default function Page() {
                         <p
                             className={` text-[16px] text-[#000000BA] mulish-bold `}
                         >
-                            Last update: 12/01/2024
+                            Last update: 12/03/2024
                         </p>
 
                         <div className={`h-[1px] w-[700px] bg-[#0000003D] mt-[40px]`}></div>
