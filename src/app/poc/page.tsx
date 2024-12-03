@@ -1,13 +1,7 @@
 import Image from 'next/image';
-import Arrow from './_assets/arraow.svg';
-import Copy from './_assets/copy.svg';
-import Every from './_assets/Every-greate.svg';
-import LogoFoot from './_assets/logo-foot.svg';
-import XBig from './_assets/wizard-x-big.svg';
-import Xwiz from './_assets/xwizard.svg';
-import Xzom from './_assets/xzombie.svg';
 import Link from 'next/link';
 import Footer from '../(public)/_components/footer';
+import Arrow from './_assets/arraow.svg';
 
 export default function Page() {
     return (
