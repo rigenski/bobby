@@ -36,23 +36,23 @@ export default function Footer() {
               <div className="flex items-center gap-4">
                 <div className="relative">
                   <Link
+                    href={'https://x.com/Quoinquix'}
+                    className="flex items-center gap-2 rounded-lg border-2 border-black bg-white p-2 font-normal text-black [box-shadow:2px_2px_0px_#000000] hover:animate-shake"
+                  >
+                    <Image src="/assets/homepage/footer/twitter.png" alt="" width={480} height={480} className="size-5" />
+                  </Link>
+                  <Link href={'https://x.com/Quoinquix'} className="absolute -bottom-2 -right-2">
+                    <Image src="/assets/homepage/footer/twitter-1.png" alt="" width={480} height={480} className="size-5" />
+                  </Link>
+                </div>
+                <div className="relative">
+                  <Link
                     href={'https://x.com/bobyinteractive'}
                     className="flex items-center gap-2 rounded-lg border-2 border-black bg-white p-2 font-normal text-black [box-shadow:2px_2px_0px_#000000] hover:animate-shake"
                   >
                     <Image src="/assets/homepage/footer/twitter.png" alt="" width={480} height={480} className="size-5" />
                   </Link>
                   <Link href={'https://x.com/bobyinteractive'} className="absolute -bottom-2 -right-2">
-                    <Image src="/assets/homepage/footer/twitter-1.png" alt="" width={480} height={480} className="size-5" />
-                  </Link>
-                </div>
-                <div className="relative">
-                  <Link
-                    href={'https://x.com/Zer0Bleu'}
-                    className="flex items-center gap-2 rounded-lg border-2 border-black bg-white p-2 font-normal text-black [box-shadow:2px_2px_0px_#000000] hover:animate-shake"
-                  >
-                    <Image src="/assets/homepage/footer/twitter.png" alt="" width={480} height={480} className="size-5" />
-                  </Link>
-                  <Link href={'https://x.com/Zer0Bleu'} className="absolute -bottom-2 -right-2">
                     <Image src="/assets/homepage/footer/twitter-2.png" alt="" width={480} height={480} className="size-5" />
                   </Link>
                 </div>
