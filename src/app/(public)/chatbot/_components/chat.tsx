@@ -33,7 +33,7 @@ export function Chat({ id, initialMessages, selectedModelId }: { id: string; ini
     const visibleMessages = messages;
 
     return (
-        <div className="font-mulish relative h-screen w-full overflow-hidden">
+        <div className="relative h-screen w-full overflow-hidden font-mulish">
             <div className="absolute inset-0 bg-contain bg-center bg-no-repeat">
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative mx-auto flex h-full w-full flex-col">

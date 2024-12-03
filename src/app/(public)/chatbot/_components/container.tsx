@@ -32,13 +32,7 @@ export default function ChatbotContainer() {
                             <video src="/assets/chatbot/video.mp4" autoPlay muted loop className="h-full w-full object-cover" />
                         </div>
                         <div className="absolute left-0 top-0 w-full">
-                            <Image
-                                src="/assets/chatbot/gradient.png"
-                                alt="Gradient"
-                                width={1920}
-                                height={1080}
-                                className="h-full w-full object-cover"
-                            />
+                            <Image src="/assets/chatbot/gradient.png" alt="Gradient" width={1920} height={1080} className="h-full object-cover" />
                         </div>
                         <div className="absolute left-0 top-0">
                             <div className="px-4 py-8">
@@ -48,8 +42,8 @@ export default function ChatbotContainer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute left-[50%] top-0 w-full -translate-x-[20%]">
-                            <Image src="/assets/chatbot/char.png" alt="Gradient" width={480} height={480} className="h-64" />
+                        <div className="absolute left-[36%] top-[25%] -translate-x-[20%] -translate-y-[25%]">
+                            <Image src="/assets/chatbot/char.png" alt="Gradient" width={480} height={480} className="h-64 w-auto" />
                         </div>
                     </div>
                 </div>
