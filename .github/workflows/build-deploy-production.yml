@@ -1,0 +1,58 @@
+name: Build and Deploy - Production
+
+on:
+    push:
+        branches: [main]
+    workflow_dispatch:
+
+jobs:
+    build:
+        name: Build and Push Image
+        runs-on: ubuntu-latest
+
+        outputs:
+            image: ${{ steps.build-image.outputs.image }}
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Install doctl
+              uses: digitalocean/action-doctl@v2
+              with:
+                  token: ${{ secrets.DO_ACCESS_TOKEN }}
+
+            - name: Login to DO Container Registry
+              run: doctl registry login --expiry-seconds 600
+
+            - name: Build, tag, and push the image to DO Container Registry
+              id: build-image
+              env:
+                  REGISTRY: registry.digitalocean.com/frontpage-base
+                  REPOSITORY: frontpage-base
+                  IMAGE_TAG: latest
+              run: |
+                  # Build a docker container and push it to DO Container Registry
+                  docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+                  echo "Pushing image to DO Container Registry..."
+                  docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+                  echo "image=$REGISTRY/$REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+    deploy:
+        name: Deploy
+        runs-on: self-hosted
+        needs: [build]
+
+        steps:
+            - name: Executing remote ssh commands using ssh key
+              uses: appleboy/ssh-action@master
+              with:
+                  host: ${{ secrets.PRODUCTION_HOST }}
+                  port: ${{ secrets.PORT }}
+                  username: ${{ secrets.USERNAME }}
+                  password: ${{ secrets.PASSWORD }}
+                  script: |
+                      cd /root/app
+                      ./login.sh
+                      docker compose pull frontpage-base
+                      docker compose up -d
