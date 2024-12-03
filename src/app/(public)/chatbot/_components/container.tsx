@@ -48,8 +48,8 @@ export default function ChatbotContainer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute left-[50%] top-0 w-full -translate-x-[20%] translate-y-[100%]">
-                            <Image src="/assets/chatbot/char.png" alt="Gradient" width={480} height={480} className="h-64 w-64" />
+                        <div className="absolute left-[50%] top-0 w-full -translate-x-[20%]">
+                            <Image src="/assets/chatbot/char.png" alt="Gradient" width={480} height={480} className="h-64" />
                         </div>
                     </div>
                 </div>

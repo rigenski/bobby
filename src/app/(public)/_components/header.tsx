@@ -31,7 +31,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={`fixed left-0 top-0 z-50 w-full ${isScrolled ? 'bg-[#AB57EC]/50' : ''}`}>
+        <header className={`fixed left-0 top-0 z-50 w-full ${isScrolled ? 'bg-[#B1D3D2]/50' : ''}`}>
             <div className="container mx-auto size-full max-w-6xl px-4">
                 <div className="flex items-center justify-between py-8">
                     <div className="flex items-center gap-8">
@@ -53,28 +53,28 @@ export default function Header() {
                     <div className="flex items-center gap-4">
                         <div className="relative">
                             <Link
-                                href={'https://x.com/PimoAI'}
+                                href={'https://x.com/1'}
                                 className="flex items-center gap-2 rounded-lg border-2 border-black bg-white p-2 font-normal text-black [box-shadow:2px_2px_0px_#000000] hover:animate-shake"
                             >
                                 <Image src="/assets/homepage/header/twitter.png" alt="" width={480} height={480} className="size-5" />
                             </Link>
-                            <Link href={'https://x.com/PimoAI'} className="absolute -bottom-2 -right-2">
+                            <Link href={'https://x.com/1'} className="absolute -bottom-2 -right-2">
                                 <Image src="/assets/homepage/header/twitter-1.png" alt="" width={480} height={480} className="size-5" />
                             </Link>
                         </div>
                         <div className="relative">
                             <Link
-                                href={'https://x.com/Zer0Bleu'}
+                                href={'https://x.com/2'}
                                 className="flex items-center gap-2 rounded-lg border-2 border-black bg-white p-2 font-normal text-black [box-shadow:2px_2px_0px_#000000] hover:animate-shake"
                             >
                                 <Image src="/assets/homepage/header/twitter.png" alt="" width={480} height={480} className="size-5" />
                             </Link>
-                            <Link href={'https://x.com/Zer0Bleu'} className="absolute -bottom-2 -right-2">
+                            <Link href={'https://x.com/2'} className="absolute -bottom-2 -right-2">
                                 <Image src="/assets/homepage/header/twitter-2.png" alt="" width={480} height={480} className="size-5" />
                             </Link>
                         </div>
                         <Link
-                            href={'https://pump.fun/coin/EKzADbkbn2rM3bXHrMU1PkZfrJdBm5CZCPoLPxeFEQAy'}
+                            href={'https://pump.fun/coin'}
                             className="flex items-center gap-2 rounded-lg border-2 border-black bg-white px-4 py-2 font-normal text-black [box-shadow:2px_2px_0px_#000000] hover:animate-shake"
                         >
                             <Image src="/assets/homepage/header/char.png" alt="" width={480} height={480} className="size-5" />
