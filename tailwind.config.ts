@@ -22,7 +22,7 @@ const config = {
         },
         extend: {
             fontFamily: {
-                comicNeue: ['var(--font-comic-neue)', ...defaultTheme.fontFamily.sans],
+                balsamiqSans: ['var(--font-balsamiq-sans)', ...defaultTheme.fontFamily.sans],
                 mulish: ['var(--font-mulish)', ...defaultTheme.fontFamily.sans],
             },
             colors: {

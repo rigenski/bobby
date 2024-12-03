@@ -1,5 +1,6 @@
 import '@/styles/main.css';
 
+import Aos from '@/components/aos';
 import MaintenanceMode from '@/components/maintenance-mode';
 import { themeConfig } from '@/constants/config';
 import type { TLayoutProps } from '@/types/layout';
@@ -8,15 +9,14 @@ import { hexToHsl } from '@/utils/colors';
 import { camelToKebab } from '@/utils/string';
 import type { Metadata } from 'next';
 import { PublicEnvScript } from 'next-runtime-env';
+import { Balsamiq_Sans, Mulish } from 'next/font/google';
 import { Analytics, Providers } from './providers';
-import Aos from '@/components/aos';
-import { Comic_Neue, Mulish } from 'next/font/google';
 
-const comicNeue = Comic_Neue({
+const balsamiqSans = Balsamiq_Sans({
     weight: ['400', '700'],
     subsets: ['latin'],
     display: 'swap',
-    variable: '--font-comic-neue',
+    variable: '--font-balsamiq-sans',
 });
 
 const mulish = Mulish({
@@ -129,7 +129,7 @@ export default async function Layout({ children }: TLayoutProps) {
                 `}
                     </style>
                 </head>
-                <body className={cn([comicNeue.variable, mulish.variable, 'font-comicNeue text-black antialiased'])}>
+                <body className={cn([balsamiqSans.variable, mulish.variable, 'font-balsamiqSans text-black antialiased'])}>
                     {!config?.maintenance?.isMaintenance ? (
                         <>
                             <Analytics config={config} />
